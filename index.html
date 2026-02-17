@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMPEROR FM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <header class="app-header">
+    <img src="https://AlexEmperor998.github.io/Emperor_FM/icon.jpg" alt="Icon" class="app-icon">
+    <h1 class="app-title">EMPEROR FM</h1>
+  </header>
+
+  <main>
+    <div id="home"></div>
+
+    <div id="playerSection" class="hidden">
+      <div class="player-header">
+        <button onclick="goHome()" class="back-btn">⬅ Back</button>
+        <h2 id="storyTitleDisplay"></h2>
+      </div>
+
+      <div class="player-content">
+        <img id="playerThumbnail" src="" alt="Thumbnail" class="player-thumb">
+        <h3 id="episodeNameDisplay"></h3>
+        
+        <div class="audio-controls">
+          <audio id="audioPlayer"></audio>
+          
+          <div class="scrubber-container">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="progressBar" value="0" step="1" min="0">
+            <span id="totalDuration">0:00</span>
+          </div>
+
+          <div class="playback-controls">
+            <button onclick="changeTime(-10)" class="control-btn">10s ⏪</button>
+            <button id="playPauseBtn" onclick="togglePlay()" class="control-btn play-btn">▶</button>
+            <button onclick="changeTime(10)" class="control-btn">⏩ 10s</button>
+          </div>
+
+          <div class="extra-controls">
+            <div class="speed-control">
+              <span>Speed:</span>
+              <select id="speedSelect" onchange="changeSpeed(this.value)">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+              </select>
+            </div>
+            <button onclick="nextEpisode()" class="control-btn next-btn">Next Episode ⏭</button>
+          </div>
+        </div>
+
+        <div class="episode-list-container">
+          <h3>Episodes</h3>
+          <ul id="episodeList" class="episode-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="qr-section">
+      <img src="https://AlexEmperor998.github.io/Emperor_FM/qr.jpg" alt="QR Code" class="qr-img">
+      <h2 class="donate-text">जल्दी एपिसोड के लिए डोनेट करे</h2>
+      <p class="telegram-link">
+        <a href="https://t.me/emperor_fm" target="_blank">
+          Telegram channel par join karna ke liye click kare
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

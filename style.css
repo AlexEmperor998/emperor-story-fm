@@ -1,0 +1,275 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Star Background */
+.stars, .twinkling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(https://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: -2;
+}
+
+.twinkling {
+  background: transparent url(https://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index: -1;
+  animation: move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from { background-position: 0 0; }
+  to { background-position: -10000px 5000px; }
+}
+
+.app-header {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.app-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.app-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-card {
+  background: rgba(34, 34, 34, 0.8);
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  border: 1px solid #333;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  background: rgba(51, 51, 51, 0.9);
+  border-color: #555;
+}
+
+.card-thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.resume-card {
+  background: rgba(40, 60, 40, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Player Styles */
+#playerSection {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.player-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#storyTitleDisplay {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 20px;
+}
+
+.player-thumb {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+}
+
+#episodeNameDisplay {
+  margin: 10px 0 20px;
+  color: #aaa;
+}
+
+.scrubber-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="range"] {
+  flex-grow: 1;
+  accent-color: #fff;
+}
+
+.playback-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.play-btn {
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.extra-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+select {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.episode-list-container {
+  text-align: left;
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.episode-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.episode-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+.episode-item:last-child {
+  border-bottom: none;
+}
+
+.episode-item.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ep-num {
+  width: 30px;
+  color: #666;
+}
+
+.ep-name {
+  flex-grow: 1;
+}
+
+.ep-play-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Footer Section */
+.qr-section {
+  padding: 40px 20px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+.qr-img {
+  width: 250px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.donate-text {
+  color: #0f0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.telegram-link a {
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: bold;
+}
