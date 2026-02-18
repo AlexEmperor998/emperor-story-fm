@@ -77,5 +77,21 @@
   </main>
 
   <script src="script.js"></script>
+  <script>
+(function() {
+    var hours = 5; 
+    var now = new Date().getTime();
+    var lastPop = localStorage.getItem("adsterraPopTime");
+
+    if (!lastPop || (now - lastPop) > hours * 60 * 60 * 1000) {
+        localStorage.setItem("adsterraPopTime", now);
+
+        var s = document.createElement("script");
+        s.src = "https://pl28739873.effectivegatecpm.com/8e/61/1b/8e611b66f63e5fce73bb3fdf981eb345.js";
+        s.async = true;
+        document.body.appendChild(s);
+    }
+})();
+</script>
 </body>
 </html>
