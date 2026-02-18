@@ -134,6 +134,30 @@ function loadHome() {
       resumeCard.onclick = resumeLast;
       grid.appendChild(resumeCard);
     }
+    grid.appendChild(card);
+
+// Har 4 story ke baad banner add kare
+if ((index + 1) % 4 === 0) {
+
+  const adDiv = document.createElement("div");
+  adDiv.className = "story-card";
+
+  adDiv.innerHTML = 
+    <div style="padding:10px;text-align:center;">
+      <script>
+        atOptions = {
+          'key' : '52a6621e17223b5ce0bb93e8244fd49f',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      <\/script>
+      <script src="https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js"><\/script>
+    </div>
+  ;
+  grid.appendChild(adDiv);
+}
   });
 }
 
