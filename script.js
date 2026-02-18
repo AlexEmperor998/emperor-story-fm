@@ -135,6 +135,37 @@ function loadHome() {
       grid.appendChild(resumeCard);
     }
     grid.appendChild(card);
+    stories.forEach((story, index) => {
+  const card = document.createElement("div");
+  card.className = "story-card";
+  card.textContent = story.title; // example content
+  grid.appendChild(card);
+
+  if ((index + 1) % 4 === 0) {
+    const adDiv = document.createElement("div");
+    adDiv.className = "story-card";
+    adDiv.style.padding = "10px";
+    adDiv.style.textAlign = "center";
+
+    const script1 = document.createElement("script");
+    script1.textContent = 
+      atOptions = {
+        'key':'52a6621e17223b5ce0bb93e8244fd49f',
+        'format':'iframe',
+        'height':250,
+        'width':300,
+        'params':{}
+      };
+    ;
+
+    const script2 = document.createElement("script");
+    script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
+
+    adDiv.appendChild(script1);
+    adDiv.appendChild(script2);
+    grid.appendChild(adDiv);
+  }
+});
   });
 }
 
