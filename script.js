@@ -115,26 +115,46 @@ function loadHome() {
   const grid = home.querySelector(".story-grid");
   
   stories.forEach((story, index) => {
+
     const card = document.createElement("div");
     card.className = "story-card";
-    card.innerHTML = 
+    card.innerHTML = `
       <img src="${story.thumbnail}" alt="${story.title}" class="card-thumb">
       <h3>${story.title}</h3>
-    ;
+    `;
     card.onclick = () => openStory(index);
     grid.appendChild(card);
 
-    // Resume card after 4th story
+    // Resume card
     if (index === 3) {
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
-      resumeCard.innerHTML = 
+      resumeCard.innerHTML = `
         <div class="resume-icon">▶</div>
         <h3>Resume Last Played</h3>
-      ;
+      `;
       resumeCard.onclick = resumeLast;
       grid.appendChild(resumeCard);
     }
+
+    // Har 4 story ke baad simple Ad Box (NO SCRIPT)
+    if ((index + 1) % 4 === 0) {
+      const adDiv = document.createElement("div");
+      adDiv.className = "ad-container";
+      adDiv.innerHTML = `
+        <iframe 
+          src="https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js"
+          width="300" 
+          height="250"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      `;
+      grid.appendChild(adDiv);
+    }
+
+  });
+}
 
     if ((index + 1) % 4 === 0) {
       const adContainer = document.createElement("div");
