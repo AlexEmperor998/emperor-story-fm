@@ -130,32 +130,29 @@ function loadHome() {
     `;
     card.onclick = () => openStory(index);
     grid.appendChild(card);
-    
+
     if (index === 3) {
 
   const adContainer = document.createElement("div");
   adContainer.style.textAlign = "center";
   adContainer.style.margin = "15px 0";
 
-  const script1 = document.createElement("script");
-  script1.innerHTML = `
-    atOptions = {
-      'key' : '57f336ac5c55d78fcccb6ea202c26c74',
-      'format' : 'iframe',
-      'height' : 50,
-      'width' : 320,
-      'params' : {}
-    };
-  `;
+  // ✅ Important change
+  window.atOptions = {
+    'key' : '57f336ac5c55d78fcccb6ea202c26c74',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
 
-  const script2 = document.createElement("script");
-  script2.src = "https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js";
+  const script = document.createElement("script");
+  script.src = "https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js";
+  script.async = true;
 
-  adContainer.appendChild(script1);
-  adContainer.appendChild(script2);
-
+  adContainer.appendChild(script);
   grid.appendChild(adContainer);
-  }
+}
 
     if (index === 3) {
       const resumeCard = document.createElement("div");
@@ -170,14 +167,14 @@ function loadHome() {
 
 
     // ===== ✅ Story 7 ke niche Ad =====
-    if (index === 6) {
+ //   if (index === 6) {
 
       const adContainer = document.createElement("div");
       adContainer.style.textAlign = "center";
       adContainer.style.margin = "15px 0";
 
       // atOptions script
-      const script1 = document.createElement("script");
+     // const script1 = document.createElement("script");
       script1.innerHTML = `
         atOptions = {
           'key' : '52a6621e17223b5ce0bb93e8244fd49f',
