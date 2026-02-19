@@ -121,20 +121,19 @@ function loadHome() {
 
   stories.forEach((story, index) => {
 
+    // ===== Story Card =====
     const card = document.createElement("div");
     card.className = "story-card";
     card.innerHTML = `
-      <img src="${story.thumbnail}" alt="${story.title}" class="card-thumb">
+      <img src="${story.thumbnail}" class="card-thumb">
       <h3>${story.title}</h3>
     `;
     card.onclick = () => openStory(index);
     grid.appendChild(card);
 
-    if (index === 3) {
-      const ad1 = document.getElementById("ad-story4");
-      ad1.style.display = "block";
-      grid.appendChild(ad1);
 
+    // ===== Resume (Same as Pehle Tha) =====
+    if (index === 3) {
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
       resumeCard.innerHTML = `
@@ -145,14 +144,17 @@ function loadHome() {
       grid.appendChild(resumeCard);
     }
 
-    if (index === 6) {
-      const ad2 = document.createElement("div");
-      ad2.style.textAlign = "center";
-      ad2.style.margin = "15px 0";
-      grid.appendChild(ad2);
 
-      const s1 = document.createElement("script");
-      s1.innerHTML = `
+    // ===== ✅ Story 7 ke niche Ad =====
+    if (index === 6) {
+
+      const adContainer = document.createElement("div");
+      adContainer.style.textAlign = "center";
+      adContainer.style.margin = "15px 0";
+
+      // atOptions script
+      const script1 = document.createElement("script");
+      script1.innerHTML = `
         atOptions = {
           'key' : '52a6621e17223b5ce0bb93e8244fd49f',
           'format' : 'iframe',
@@ -161,11 +163,15 @@ function loadHome() {
           'params' : {}
         };
       `;
-      ad2.appendChild(s1);
 
-      const s2 = document.createElement("script");
-      s2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
-      ad2.appendChild(s2);
+      // invoke script
+      const script2 = document.createElement("script");
+      script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
+
+      adContainer.appendChild(script1);
+      adContainer.appendChild(script2);
+
+      grid.appendChild(adContainer);
     }
 
   });
