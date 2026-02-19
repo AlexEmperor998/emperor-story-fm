@@ -141,8 +141,8 @@ function loadHome() {
   window.atOptions = {
     'key' : '57f336ac5c55d78fcccb6ea202c26c74',
     'format' : 'iframe',
-    'height' : 50,
     'width' : 320,
+    'height' : 50,
     'params' : {}
   };
 
@@ -167,14 +167,14 @@ function loadHome() {
 
 
     // ===== ✅ Story 7 ke niche Ad =====
- //   if (index === 6) {
+    if (index === 6) {
 
       const adContainer = document.createElement("div");
       adContainer.style.textAlign = "center";
       adContainer.style.margin = "15px 0";
 
-      // atOptions script
-     // const script1 = document.createElement("script");
+       atOptions script
+      const script1 = document.createElement("script");
       script1.innerHTML = `
         atOptions = {
           'key' : '52a6621e17223b5ce0bb93e8244fd49f',
