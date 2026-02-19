@@ -91,7 +91,7 @@ const stories = [
     title: "Story 6",
     thumbnail: "https://static.wixstatic.com/media/daf650_100844930ba14a5f8a901283413a897f~mv2.gif",
     episodes: [{ name: "Coming Soon", src: "" }]
-  }
+  },
   {
   title: "Story 7",
   thumbnail: "https://static.wixstatic.com/media/daf650_100844930ba14a5f8a901283413a897f~mv2.gif",
@@ -131,17 +131,15 @@ function loadHome() {
     card.onclick = () => openStory(index);
     grid.appendChild(card);
 
-    // Story 4 ke baad Ad
-    if (index === 3) {
+    // Ad 1 – Story 4 ke baad (300x250)
+    if ((index + 1) % 4 === 0) {
 
-      const adContainer = document.createElement("div");
-      adContainer.className = "ad-container";
-      grid.appendChild(adContainer);
+      const ad1 = document.createElement("div");
+      ad1.className = "ad-container";
+      grid.appendChild(ad1);
 
-      // Proper Script Injection
-      const script1 = document.createElement("script");
-      script1.type = "text/javascript";
-      script1.text = `
+      const s1 = document.createElement("script");
+      s1.text = `
         atOptions = {
           'key' : '52a6621e17223b5ce0bb93e8244fd49f',
           'format' : 'iframe',
@@ -151,26 +149,41 @@ function loadHome() {
         };
       `;
 
-      const script2 = document.createElement("script");
-      script2.type = "text/javascript";
-      script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
+      const s2 = document.createElement("script");
+      s2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
 
-      adContainer.appendChild(script1);
-      adContainer.appendChild(script2);
-
-      // Resume Card
-      const resumeCard = document.createElement("div");
-      resumeCard.className = "story-card resume-card";
-      resumeCard.innerHTML = `
-        <div class="resume-icon">▶</div>
-        <h3>Resume Last Played</h3>
-      `;
-      resumeCard.onclick = resumeLast;
-      grid.appendChild(resumeCard);
+      ad1.appendChild(s1);
+      ad1.appendChild(s2);
     }
 
+    // Ad 2 – Story 7 ke baad (320x50)
+    if (index === 6) {
+
+      const ad2 = document.createElement("div");
+      ad2.className = "ad-container";
+      ad2.style.textAlign = "center";
+      grid.appendChild(ad2);
+
+      const s3 = document.createElement("script");
+      s3.text = `
+        atOptions = {
+          'key' : '57f336ac5c55d78fcccb6ea202c26c74',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      `;
+
+      const s4 = document.createElement("script");
+      s4.src = "https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js";
+
+      ad2.appendChild(s3);
+      ad2.appendChild(s4);
+    }
   });
 }
+
 function openStory(index) {
   currentStoryIndex = index;
   currentEpisodeIndex = 0;
