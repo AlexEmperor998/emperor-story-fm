@@ -120,8 +120,6 @@ function loadHome() {
   const grid = home.querySelector(".story-grid");
 
   stories.forEach((story, index) => {
-
-    // ===== Story Card =====
     const card = document.createElement("div");
     card.className = "story-card";
     card.innerHTML = `
@@ -130,29 +128,6 @@ function loadHome() {
     `;
     card.onclick = () => openStory(index);
     grid.appendChild(card);
-
-    if (index === 3) {
-
-  const adContainer = document.createElement("div");
-  adContainer.style.textAlign = "center";
-  adContainer.style.margin = "15px 0";
-
-  // ✅ Important change
-  window.atOptions = {
-    'key' : '57f336ac5c55d78fcccb6ea202c26c74',
-    'format' : 'iframe',
-    'width' : 320,
-    'height' : 50,
-    'params' : {}
-  };
-
-  const script = document.createElement("script");
-  script.src = "https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js";
-  script.async = true;
-
-  adContainer.appendChild(script);
-  grid.appendChild(adContainer);
-}
 
     if (index === 3) {
       const resumeCard = document.createElement("div");
@@ -165,15 +140,12 @@ function loadHome() {
       grid.appendChild(resumeCard);
     }
 
-
-    // ===== ✅ Story 7 ke niche Ad =====
     if (index === 6) {
 
       const adContainer = document.createElement("div");
       adContainer.style.textAlign = "center";
       adContainer.style.margin = "15px 0";
 
-       atOptions script
       const script1 = document.createElement("script");
       script1.innerHTML = `
         atOptions = {
@@ -184,8 +156,7 @@ function loadHome() {
           'params' : {}
         };
       `;
-
-      // invoke script
+      
       const script2 = document.createElement("script");
       script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
 
