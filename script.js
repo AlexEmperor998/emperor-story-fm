@@ -121,7 +121,6 @@ function loadHome() {
 
   stories.forEach((story, index) => {
 
-    // ===== Story Card =====
     const card = document.createElement("div");
     card.className = "story-card";
     card.innerHTML = `
@@ -131,34 +130,11 @@ function loadHome() {
     card.onclick = () => openStory(index);
     grid.appendChild(card);
 
-
-    // ===== After Story 4 =====
     if (index === 3) {
-
-      // --- 320x50 Ad ---
-      const ad1 = document.createElement("div");
-      ad1.className = "ad-container";
+      const ad1 = document.getElementById("ad-story4");
+      ad1.style.display = "block";
       grid.appendChild(ad1);
 
-      const s1 = document.createElement("script");
-      s1.type = "text/javascript";
-      s1.innerHTML = `
-        atOptions = {
-          'key' : '57f336ac5c55d78fcccb6ea202c26c74',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      `;
-      ad1.appendChild(s1);
-
-      const s2 = document.createElement("script");
-      s2.type = "text/javascript";
-      s2.src = "https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js";
-      ad1.appendChild(s2);
-
-      // --- Resume Card ---
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
       resumeCard.innerHTML = `
@@ -169,17 +145,14 @@ function loadHome() {
       grid.appendChild(resumeCard);
     }
 
-
-    // ===== After Story 7 =====
     if (index === 6) {
-
       const ad2 = document.createElement("div");
-      ad2.className = "ad-container";
+      ad2.style.textAlign = "center";
+      ad2.style.margin = "15px 0";
       grid.appendChild(ad2);
 
-      const s3 = document.createElement("script");
-      s3.type = "text/javascript";
-      s3.innerHTML = `
+      const s1 = document.createElement("script");
+      s1.innerHTML = `
         atOptions = {
           'key' : '52a6621e17223b5ce0bb93e8244fd49f',
           'format' : 'iframe',
@@ -188,12 +161,11 @@ function loadHome() {
           'params' : {}
         };
       `;
-      ad2.appendChild(s3);
+      ad2.appendChild(s1);
 
-      const s4 = document.createElement("script");
-      s4.type = "text/javascript";
-      s4.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
-      ad2.appendChild(s4);
+      const s2 = document.createElement("script");
+      s2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
+      ad2.appendChild(s2);
     }
 
   });
