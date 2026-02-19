@@ -84,14 +84,19 @@ const stories = [
   },
   {
     title: "Story 5",
-    thumbnail: "https://AlexEmperor998.github.io/Emperor_FM/story1.jpg",
+    thumbnail: "https://static.wixstatic.com/media/daf650_100844930ba14a5f8a901283413a897f~mv2.gif",
     episodes: [{ name: "Coming Soon", src: "" }]
   },
   {
     title: "Story 6",
-    thumbnail: "https://AlexEmperor998.github.io/Emperor_FM/story2.jpg",
+    thumbnail: "https://static.wixstatic.com/media/daf650_100844930ba14a5f8a901283413a897f~mv2.gif",
     episodes: [{ name: "Coming Soon", src: "" }]
   }
+  {
+  title: "Story 7",
+  thumbnail: "https://static.wixstatic.com/media/daf650_100844930ba14a5f8a901283413a897f~mv2.gif",
+  episodes: [{ name: "Coming Soon", src: "" }]
+},
 ];
 
 const home = document.getElementById("home");
