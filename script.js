@@ -121,7 +121,7 @@ function loadHome() {
 
   stories.forEach((story, index) => {
 
-    // Story Card
+    // ===== Story Card =====
     const card = document.createElement("div");
     card.className = "story-card";
     card.innerHTML = `
@@ -132,16 +132,17 @@ function loadHome() {
     grid.appendChild(card);
 
 
-    // ✅ After Story 4 → First Ad then Resume
+    // ===== After Story 4 =====
     if (index === 3) {
 
-      // ---- 320x50 Ad ----
+      // --- 320x50 Ad ---
       const ad1 = document.createElement("div");
       ad1.className = "ad-container";
       grid.appendChild(ad1);
 
-      const script1 = document.createElement("script");
-      script1.innerHTML = `
+      const s1 = document.createElement("script");
+      s1.type = "text/javascript";
+      s1.innerHTML = `
         atOptions = {
           'key' : '57f336ac5c55d78fcccb6ea202c26c74',
           'format' : 'iframe',
@@ -150,13 +151,14 @@ function loadHome() {
           'params' : {}
         };
       `;
-      ad1.appendChild(script1);
+      ad1.appendChild(s1);
 
-      const invoke1 = document.createElement("script");
-      invoke1.src = "https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js";
-      ad1.appendChild(invoke1);
+      const s2 = document.createElement("script");
+      s2.type = "text/javascript";
+      s2.src = "https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js";
+      ad1.appendChild(s2);
 
-      // ---- Resume Card ----
+      // --- Resume Card ---
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
       resumeCard.innerHTML = `
@@ -168,15 +170,16 @@ function loadHome() {
     }
 
 
-    // ✅ After Story 7 → 300x250 Ad
+    // ===== After Story 7 =====
     if (index === 6) {
 
       const ad2 = document.createElement("div");
       ad2.className = "ad-container";
       grid.appendChild(ad2);
 
-      const script2 = document.createElement("script");
-      script2.innerHTML = `
+      const s3 = document.createElement("script");
+      s3.type = "text/javascript";
+      s3.innerHTML = `
         atOptions = {
           'key' : '52a6621e17223b5ce0bb93e8244fd49f',
           'format' : 'iframe',
@@ -185,15 +188,17 @@ function loadHome() {
           'params' : {}
         };
       `;
-      ad2.appendChild(script2);
+      ad2.appendChild(s3);
 
-      const invoke2 = document.createElement("script");
-      invoke2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
-      ad2.appendChild(invoke2);
+      const s4 = document.createElement("script");
+      s4.type = "text/javascript";
+      s4.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
+      ad2.appendChild(s4);
     }
 
   });
 }
+
 function openStory(index) {
   currentStoryIndex = index;
   currentEpisodeIndex = 0;
