@@ -110,10 +110,11 @@ const speedSelect = document.getElementById("speedSelect");
 let currentStoryIndex = null;
 let currentEpisodeIndex = 0;
 
+
 function loadHome() {
   home.innerHTML = '<div class="story-grid"></div>';
   const grid = home.querySelector(".story-grid");
-  
+
   stories.forEach((story, index) => {
 
     const card = document.createElement("div");
@@ -125,31 +126,34 @@ function loadHome() {
     card.onclick = () => openStory(index);
     grid.appendChild(card);
 
-    // 🔥 Story 4 ke baad Ad lagao
+    // Story 4 ke baad Ad
     if (index === 3) {
-      const adDiv = document.createElement("div");
-      adDiv.className = "ad-container";
 
-      adDiv.innerHTML = `
-        <div style="width:300px;height:250px;margin:15px auto;">
-          <script>
-            atOptions = {
-              'key' : '52a6621e17223b5ce0bb93e8244fd49f',
-              'format' : 'iframe',
-              'height' : 250,
-              'width' : 300,
-              'params' : {}
-            };
-          </script>
-          <script src="https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js"></script>
-        </div>
+      const adContainer = document.createElement("div");
+      adContainer.className = "ad-container";
+      grid.appendChild(adContainer);
+
+      // Proper Script Injection
+      const script1 = document.createElement("script");
+      script1.type = "text/javascript";
+      script1.text = `
+        atOptions = {
+          'key' : '52a6621e17223b5ce0bb93e8244fd49f',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
       `;
 
-      grid.appendChild(adDiv);
-    }
+      const script2 = document.createElement("script");
+      script2.type = "text/javascript";
+      script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
 
-    // Resume card (Ad ke baad)
-    if (index === 3) {
+      adContainer.appendChild(script1);
+      adContainer.appendChild(script2);
+
+      // Resume Card
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
       resumeCard.innerHTML = `
@@ -162,7 +166,6 @@ function loadHome() {
 
   });
 }
-
 function openStory(index) {
   currentStoryIndex = index;
   currentEpisodeIndex = 0;
