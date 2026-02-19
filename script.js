@@ -129,29 +129,7 @@ function loadHome() {
     `;
     card.onclick = () => openStory(index);
     grid.appendChild(card);
-
-    if (index === 3) {
-
-      const adContainer = document.createElement("div");
-      adContainer.style.textAlign = "center";
-      adContainer.style.margin = "15px 0";
-
-      adContainer.innerHTML = `
-        <script>
-          atOptions = {
-            'key' : '57f336ac5c55d78fcccb6ea202c26c74',
-            'format' : 'iframe',
-            'height' : 50,
-            'width' : 320,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highperformanceformat.com/57f336ac5c55d78fcccb6ea202c26c74/invoke.js"></script>
-      `;
-
-      grid.appendChild(adContainer);
-    }
-
+    
     if (index === 3) {
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
@@ -161,6 +139,34 @@ function loadHome() {
       `;
       resumeCard.onclick = resumeLast;
       grid.appendChild(resumeCard);
+    }
+
+
+    // ===== ✅ Story 7 ke niche Ad =====
+    if (index === 6) {
+
+      const adContainer = document.createElement("div");
+      adContainer.style.textAlign = "center";
+      adContainer.style.margin = "15px 0";
+
+      // atOptions script
+      const script1 = document.createElement("script");
+      script1.innerHTML = `
+        atOptions = {
+          'key' : '52a6621e17223b5ce0bb93e8244fd49f',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      `;
+      const script2 = document.createElement("script");
+      script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
+
+      adContainer.appendChild(script1);
+      adContainer.appendChild(script2);
+
+      grid.appendChild(adContainer);
     }
 
   });
