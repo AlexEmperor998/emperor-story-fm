@@ -117,23 +117,48 @@ function loadHome() {
   stories.forEach((story, index) => {
     const card = document.createElement("div");
     card.className = "story-card";
-    card.innerHTML = `
+    card.innerHTML = 
       <img src="${story.thumbnail}" alt="${story.title}" class="card-thumb">
       <h3>${story.title}</h3>
-    `;
+    ;
     card.onclick = () => openStory(index);
     grid.appendChild(card);
 
+    // Resume card after 4th story
     if (index === 3) {
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
-      resumeCard.innerHTML = `
+      resumeCard.innerHTML = 
         <div class="resume-icon">▶</div>
         <h3>Resume Last Played</h3>
-      `;
+      ;
       resumeCard.onclick = resumeLast;
       grid.appendChild(resumeCard);
     }
+
+    if ((index + 1) % 4 === 0) {
+      const adContainer = document.createElement("div");
+      adContainer.className = "ad-container";
+
+      const script1 = document.createElement("script");
+      script1.innerHTML = 
+        atOptions = {
+          'key' : '52a6621e17223b5ce0bb93e8244fd49f',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      ;
+
+      const script2 = document.createElement("script");
+      script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
+
+      adContainer.appendChild(script1);
+      adContainer.appendChild(script2);
+      grid.appendChild(adContainer);
+    }
+
   });
 }
 
