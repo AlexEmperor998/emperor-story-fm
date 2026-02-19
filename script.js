@@ -125,7 +125,30 @@ function loadHome() {
     card.onclick = () => openStory(index);
     grid.appendChild(card);
 
-    // Resume card
+    // 🔥 Story 4 ke baad Ad lagao
+    if (index === 3) {
+      const adDiv = document.createElement("div");
+      adDiv.className = "ad-container";
+
+      adDiv.innerHTML = `
+        <div style="width:300px;height:250px;margin:15px auto;">
+          <script>
+            atOptions = {
+              'key' : '52a6621e17223b5ce0bb93e8244fd49f',
+              'format' : 'iframe',
+              'height' : 250,
+              'width' : 300,
+              'params' : {}
+            };
+          </script>
+          <script src="https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js"></script>
+        </div>
+      `;
+
+      grid.appendChild(adDiv);
+    }
+
+    // Resume card (Ad ke baad)
     if (index === 3) {
       const resumeCard = document.createElement("div");
       resumeCard.className = "story-card resume-card";
@@ -135,48 +158,6 @@ function loadHome() {
       `;
       resumeCard.onclick = resumeLast;
       grid.appendChild(resumeCard);
-    }
-
-    // Har 4 story ke baad simple Ad Box (NO SCRIPT)
-    if ((index + 1) % 4 === 0) {
-      const adDiv = document.createElement("div");
-      adDiv.className = "ad-container";
-      adDiv.innerHTML = `
-        <iframe 
-          src="https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js"
-          width="300" 
-          height="250"
-          frameborder="0"
-          scrolling="no">
-        </iframe>
-      `;
-      grid.appendChild(adDiv);
-    }
-
-  });
-}
-
-    if ((index + 1) % 4 === 0) {
-      const adContainer = document.createElement("div");
-      adContainer.className = "ad-container";
-
-      const script1 = document.createElement("script");
-      script1.innerHTML = 
-        atOptions = {
-          'key' : '52a6621e17223b5ce0bb93e8244fd49f',
-          'format' : 'iframe',
-          'height' : 250,
-          'width' : 300,
-          'params' : {}
-        };
-      ;
-
-      const script2 = document.createElement("script");
-      script2.src = "https://www.highperformanceformat.com/52a6621e17223b5ce0bb93e8244fd49f/invoke.js";
-
-      adContainer.appendChild(script1);
-      adContainer.appendChild(script2);
-      grid.appendChild(adContainer);
     }
 
   });
