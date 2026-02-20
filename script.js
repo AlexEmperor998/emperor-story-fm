@@ -75,7 +75,27 @@ const stories = [
   {
     title: "Millionaire",
     thumbnail: "https://AlexEmperor998.github.io/Emperor_FM/story3.jpg",
-    episodes: [{ name: "Coming Soon", src: "" }
+    episodes: [{ name: "Unlucky Lucky", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x1.m4a" },
+{ name: "Lucky Ka Bank Account", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x2.m4a" },
+{ name: "Kismat Ka Pitara", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x3.m4a" },
+{ name: "Jhootha Pyaar", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x4.m4a" },
+{ name: "Hostel Reunion", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x5.m4a" },
+{ name: "Koyal par Mandraya Baaz", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x6.m4a" },
+{ name: "Paiso Ka Ghamand", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x7.m4a" },
+{ name: "Lion se Panga", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x8.m4a" },
+{ name: "Koyal ka Pinjara", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x9.m4a" },
+{ name: "Nayi Ummeed", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x10.m4a" },
+{ name: "Lucky ka Sabar", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x11.m4a" },
+{ name: "Koyal ki Uljhan", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x12.m4a" },
+{ name: "Unknown Number", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x13.m4a" },
+{ name: "Param Sundari", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x14.m4a" },
+{ name: "Down to Earth", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x15.m4a" },
+{ name: "Lucky Aur Raghini", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x16.m4a" },
+{ name: "Asli Hero Kaun", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x17.m4a" },
+{ name: "Hospital Main Party", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x18.m4a" },
+{ name: "Lucky ka Promise", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x19.m4a" },
+{ name: "Hotel Sun & Moon", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x20.m4a" },
+{ name: "Reserved Table", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x21.m4a" }
  ]
   },
   {
