@@ -69,7 +69,27 @@ const stories = [
       { name: "Kathin Prasikshan", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@e424a296f5d99e39aeade58847f4acd9fef49045/Ep7.m4a" },
       { name: "Neelami", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@e424a296f5d99e39aeade58847f4acd9fef49045/Ep8.m4a" },
       { name: "Toofan", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@e424a296f5d99e39aeade58847f4acd9fef49045/Ep9.m4a" },
-      { name: "Naqabposh", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@e424a296f5d99e39aeade58847f4acd9fef49045/Ep10.m4a" }
+      { name: "Naqabposh", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@e424a296f5d99e39aeade58847f4acd9fef49045/Ep10.m4a" },
+      { name: "Tohfa", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x11.m4a" },
+      { name: "Samay Ret Ki Tarah Hota Hai", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x12.m4a" },
+      { name: "Mazaak", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x13.m4a" },
+      { name: "Dhruv Ka Test", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x14.m4a" },
+      { name: "Aaina Ateet Ka", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x15.m4a" },
+      { name: "Zameen Se Aasmaan Tak", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x16.m4a" },
+      { name: "Ab Baari Hai Dhruv Ke Test Ki", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x17.m4a" },
+      { name: "Youth Ceremony", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x18.m4a" },
+      { name: "Sunny Ka Challenge", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x19.m4a" },
+      { name: "Ek Naya Challenge", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x20.m4a" },
+      { name: "Sanvi Ka Badla", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x21.m4a" },
+      { name: "Humein Jaldi Shaktiyaan Dhundhni Hongi", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x22.m4a" },
+      { name: "Kya Hai Us Darwaze Ke Peeche?", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x23.m4a" },
+      { name: "Rok Sako To Rok Lo", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x24.m4a" },
+      { name: "Karishmai Powder", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x25.m4a" },
+      { name: "Rank 4 Ka Hakeem?", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x26.m4a" },
+      { name: "Nilaami Shuru Hone Vali Hai", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x27.m4a" },
+      { name: "Kaun Lagaega Sabse Unchi Boli?", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x28.m4a" },
+      { name: "Ye Khaas Mehmaan Kaun Hai?", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x29.m4a" },
+      { name: "Aakhir Kab Milega Karishmai Powder", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S2@aa068b4fb7c3369bd29ca8f73f90e27bf5ebcb9d/2x30.m4a" }
     ]
   },
   {
@@ -95,7 +115,7 @@ const stories = [
 { name: "Hospital Main Party", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x18.m4a" },
 { name: "Lucky ka Promise", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x19.m4a" },
 { name: "Hotel Sun & Moon", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x20.m4a" },
-{ name: "Reserved Table", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x21.m4a" }
+{ name: "Reserved Table", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S3@031f1f0ab47057cb74b99c58c113d5c9cd3778cb/3x21.m4a" },
  ]
   },
   {
