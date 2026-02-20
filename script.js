@@ -75,6 +75,12 @@ const stories = [
   {
     title: "Millionaire",
     thumbnail: "https://AlexEmperor998.github.io/Emperor_FM/story3.jpg",
+    episodes: [{ name: "Coming Soon", src: "" }
+ ]
+  },
+  {
+    title: "The Warrior",
+    thumbnail: "https://AlexEmperor998.github.io/Emperor_FM/story4.jpg",
     episodes: [{ name: "आकाश विष मोती के लिए जंग", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S4@901c662084983b9f84cd74c64bec08d03c0fadf6/4x1.m4a" },
 { name: "अंत या आरम्भ?", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S4@901c662084983b9f84cd74c64bec08d03c0fadf6/4x2.m4a" },
 { name: "सुंदर महिलाएं मुसीबतों की जड़", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S4@901c662084983b9f84cd74c64bec08d03c0fadf6/4x3.m4a" },
@@ -106,12 +112,7 @@ const stories = [
 { name: "योजना पड़ी उल्टी", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S4@901c662084983b9f84cd74c64bec08d03c0fadf6/4x29.m4a" },
 { name: "अथर्व का सच आया सबके सामने!", src: "https://cdn.jsdelivr.net/gh/alexkumar4/S4@901c662084983b9f84cd74c64bec08d03c0fadf6/4x30.m4a" },
               
- ]
-  },
-  {
-    title: "The Warrior",
-    thumbnail: "https://AlexEmperor998.github.io/Emperor_FM/story4.jpg",
-    episodes: [{ name: "Coming Soon", src: "" }]
+   ]
   },
   {
     title: "Story 5",
