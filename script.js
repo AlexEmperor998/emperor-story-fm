@@ -110,7 +110,6 @@ const stories = [
       { title: "Ira Ki Kamzori", src: "https://cdn.jsdelivr.net/gh/sou57g/sy@5a3c89fa898be5ce106e9a4429a0b66529f8a8b9/2x48.m4a" },
       { title: "Jal Gaye Amish", src: "https://cdn.jsdelivr.net/gh/sou57g/sy@5a3c89fa898be5ce106e9a4429a0b66529f8a8b9/2x49.m4a" },
       { title: "Aamish Ka Khatma", src: "https://cdn.jsdelivr.net/gh/sou57g/sy@5a3c89fa898be5ce106e9a4429a0b66529f8a8b9/2x50.m4a" },
-      { title: "Raksh Academy Ka Admission", src: "https://cdn.jsdelivr.net/gh/sou57g/sy@5a3c89fa898be5ce106e9a4429a0b66529f8a8b9/2x51.m4a" },
       { title: "Raksh Academy Ka Admission", src: "https://cdn.jsdelivr.net/gh/sou57g/S1@08f6e3ad843cbf88e2b7608834c6d3cb0a701bcc/1x51.m4a" },
       { title: "Naam Hai Lobo", src: "https://cdn.jsdelivr.net/gh/sou57g/S1@08f6e3ad843cbf88e2b7608834c6d3cb0a701bcc/1x52.m4a" },
       { title: "Muqabla Zeeshan Se", src: "https://cdn.jsdelivr.net/gh/sou57g/S1@08f6e3ad843cbf88e2b7608834c6d3cb0a701bcc/1x53.m4a" },
