@@ -1,5 +1,5 @@
 stories.push({
-    title: "Story 5",
+    title: "Story 7",
     thumbnail: "https://static.wixstatic.com/media/daf650_100844930ba14a5f8a901283413a897f~mv2.gif",
     episodes: [{ name: "Coming Soon", src: "" }]
   });
